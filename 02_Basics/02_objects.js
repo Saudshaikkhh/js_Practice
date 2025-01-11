@@ -14,7 +14,7 @@ Properties and methods are added dynamically after creation.
 const symbolKey = Symbol("uniqueKey");
 
 
-//Object Literal way
+//Object Literal way --> Non-Singleton Object
 const JSuser = {
     Name: "Hitesh",
     Age: 18,
@@ -84,6 +84,25 @@ The output console.log(JSuser.greetings); // Output: [Function (anonymous)] mean
 //  function itself, and the function is shown as [Function (anonymous)] because it doesn't have a name assigned
 //  to it. If the function were named, the output would display the function's name instead.
 */
-
 console.log(JSuser.greetings()); //Output: Hello JS User
+
+//new Object() Constructor or singleton: --> Singleton Object
+const InstagramUser = new Object()
+InstagramUser.Id = "saudshaikkhh"
+InstagramUser.name = "Saud"
+InstagramUser.Isloggedin = false
+
+console.log(InstagramUser); //Output: { Id: 'saudshaikkhh', name: 'Saud', Isloggedin: false }
+
+const RegularUser = {
+    email:"Shaikhmohdsaud2004@microsoft.com",
+    fullname:{
+        Userfullname:{
+            firstname:"Mohammed Saud",
+            lastname:"Shaikh"
+        }
+    }
+}
+
+console.log(RegularUser.fullname.Userfullname);
 
