@@ -44,3 +44,42 @@ slice(start, end): Extracts elements from start to end (not inclusive).
 splice(start, deleteCount, ...items): Starts at start, removes deleteCount elements, and optionally adds ...items.
 */
 
+// combining two arrays
+
+const marvelhero = ["hulk", "ironman","spiderman"]
+const dchero = ["flash", "superman", "batman"]
+
+//marvelhero.push(dchero)
+//console.log(marvelhero); //Output: [ 'hulk', 'ironman', 'spiderman', [ 'flash', 'superman', 'batman' ] ]
+//console.log(marvelhero[3][2]) //Output: batman
+
+const allhero = marvelhero.concat(dchero)
+console.log(allhero);//Output: [ 'hulk', 'ironman', 'spiderman', 'flash', 'superman', 'batman' ]
+// the above approach has limitation only two array can merge together at a time
+
+const heroall = [...marvelhero, ...dchero] // another approach to merge the array without any limitations
+console.log(heroall); //[ 'hulk', 'ironman', 'spiderman', 'flash', 'superman', 'batman' ]
+
+//multiples array removal
+
+const mullarray = [1, 2, 3, 2,[5, 5, 5, 5,[8, 8, 8, 8],5],55]
+
+const allmularr = mullarray.flat(Infinity)
+console.log(allmularr); //Output : [
+//     1,  2, 3, 2, 5, 5,
+//     5,  5, 8, 8, 8, 8,
+//     5, 55
+//   ]
+
+//we can the array
+console.log(Array.isArray(allmularr)); //Output: true
+console.log(Array.from("Saud")); //Output: [ 'S', 'a', 'u', 'd' ]
+console.log(Array.from({name:"Saud"})); //Output: [] // reason object cant be converted into array
+
+// we can a array full of var
+let n1 = 100
+let n2 = 200
+let n3 = 300 
+console.log(Array.of(n1,n2,n3)); //Output: [ 100, 200, 300 ]
+
+
