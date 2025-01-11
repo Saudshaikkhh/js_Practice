@@ -104,5 +104,62 @@ const RegularUser = {
     }
 }
 
-console.log(RegularUser.fullname.Userfullname);
+console.log(RegularUser.fullname.Userfullname); //Output: { firstname: 'Mohammed Saud', lastname: 'Shaikh' }
 
+//Combining Objects
+const obj1 = {1:"a", 2:"b"}
+const obj2 = {3:"a", 4:"b"}
+const obj3 = {5:"a", 6:"b"}
+
+//Approach-01
+const obj4 ={ obj1, obj2, obj3}
+console.log(obj4);
+/*
+Output:
+{
+  obj1: { '1': 'a', '2': 'b' },
+  obj2: { '3': 'a', '4': 'b' },
+  obj3: { '5': 'a', '6': 'b' }
+}
+*/
+
+//Approach-02
+const obj5 = Object.assign({},obj1, obj2, obj3)
+console.log(obj5); //Output: { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+
+//Approach -03
+const obj6 = {...obj1, ...obj2, ...obj3}
+console.log(obj6); //Output: { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+
+
+// how can we add objects in array
+const users = [
+        { uid: 1, emailid: "shaikhmohdsaud2004@gmail.com" }, //index 0
+        { uid: 2, emailid: "randomuser01@example.com" },     //index 1
+        { uid: 3, emailid: "user1234@example.net" },         //index 2
+        { uid: 4, emailid: "john.doe88@samplemail.com" },    //index 3
+        { uid: 5, emailid: "alex_smith2000@mailbox.org" },   //index 4
+        { uid: 6, emailid: "lisa.martin@webmail.com" },      //index 5
+        { uid: 7, emailid: "michael_brown@domain.com" },     //index 6
+        { uid: 8, emailid: "sarah.connor@website.co" },      //index 7
+        { uid: 9, emailid: "emma.jameson@workmail.com" },    //index 8
+        { uid: 10, emailid: "jackson_lee22@example.co" },    //index 9
+        { uid: 11, emailid: "olivia.white@inbox.org" },      //index 10
+        { uid: 12, emailid: "daniel.miller@techmail.net" },  //index 11
+        { uid: 13, emailid: "zoe_davis01@randommail.com" }   //index 12
+]
+
+console.log(users[5].emailid); //Output: lisa.martin@webmail.com
+
+//some extra object functions
+console.log(Object.keys(InstagramUser)); //Output: [ 'Id', 'name', 'Isloggedin' ]
+console.log(Object.values(InstagramUser)); //Output: [ 'saudshaikkhh', 'Saud', false ]
+console.log(Object.entries(InstagramUser)); 
+/*Output:
+[
+  [ 'Id', 'saudshaikkhh' ],
+  [ 'name', 'Saud' ],
+  [ 'Isloggedin', false ]
+]
+*/
+console.log(InstagramUser.hasOwnProperty('Email')); //Output: false
