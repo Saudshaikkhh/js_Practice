@@ -163,3 +163,16 @@ console.log(Object.entries(InstagramUser));
 ]
 */
 console.log(InstagramUser.hasOwnProperty('Email')); //Output: false
+
+//Object destructure
+
+const Studentinfo ={
+    Studentname: "Shaikh Mohammed Saud Naeem",
+    StudentIdNum: 32,
+    StudentFees: 300000
+}
+console.log(Studentinfo.StudentFees); //Output: 300000
+
+//but we have a different way to call a specific key in objects
+const {StudentFees:fees} = Studentinfo
+console.log(fees); //Output: 300000
