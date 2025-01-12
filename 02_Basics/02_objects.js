@@ -29,7 +29,6 @@ const JSuser = {
 console.log(typeof JSuser[symbolKey]); //Output: number
 /*
 Note:
-
 In JavaScript, a symbol is a unique key used in objects, and the value 
 associated with that symbol can be of any type, like a string. When you access JSuser[symbolKey], 
 it returns the value associated with the symbol, and using typeof checks the type of that value. 

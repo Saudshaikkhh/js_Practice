@@ -22,7 +22,7 @@ console.log(score2.toFixed(2)); // mostly prefer 2
 console.log("\n");
 console.log("Math Functions:");
 console.log(Math);
-console.log(Math.abs(-7)); //Output: -7
+console.log(Math.abs(-7)); //Output: 7
 console.log(Math.round(5.8)); //Output: 6
 console.log(Math.ceil(4.2)); //Output: 5 even if the value greater than 4 it will choose the other number
 console.log(Math.floor(4.9)); //Output: 4 no matter how much the value if until its .9 it will take the lower value before the point
@@ -37,11 +37,3 @@ console.log((Math.random()*10)+1);// this will give you value between 1-5
 let min = 10
 let max = 50
 console.log(Math.floor((Math.random()*(max-min +1))+min)); // this is the formula
-
-
-
-
-
-
-
-
