@@ -6,13 +6,13 @@ Welcome to the **JavaScript Practice Repository**! This repository is a comprehe
 
 ## 📑 Table of Contents
 
-1. [About the Project](#about-the-project)
-2. [Features](#features)
-3. [Folder Structure](#folder-structure)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
+1. [About the Project]
+2. [Features]
+3. [Folder Structure]
+4. [Installation]
+5. [Usage]
+6. [Contributing]
+7. [License]
 
 ---
 
