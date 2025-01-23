@@ -1,0 +1,12 @@
+Execution Context:
+
+1. javascript runs code in two phase
+
+2. Whenever a code is run it always create a Global Execution Context and it got refers by "this" variable
+[Note: Browser has different Execution Context and nodejs,dino, bun has different Execution Context
+"Browsers Execution context is actually very important and its value shows Window Object] i.e.this=windpow Object]
+
+3. javascript is single threaded
+
+4. There are two types of Execution context which are Global Execution, eval Execution Context, function Execution Context
+
